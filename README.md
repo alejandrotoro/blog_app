@@ -1,24 +1,36 @@
-# README
+# Bill my Work #
+### Initial requirements ###
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    Rails 5.2.1
+    Ruby 2.5.1
+    PostgreSQL
+    RSpec
+    Capybara
 
-Things you may want to cover:
+### Install gems ###
 
-* Ruby version
+Execute the gems installer
 
-* System dependencies
+    $ bundle install
 
-* Configuration
+### Configure database ###
 
-* Database creation
+To connect to the database create the file <b>config/database.yml</b>.
 
-* Database initialization
+For an easy creation, duplicate the `database.yml.example` file, and rename it.
 
-* How to run the test suite
+```bash
+cp config/database.yml.example config/database.yml
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+After configuring the database run (if the database has not been created)
 
-* Deployment instructions
+    $ rails db:create
 
-* ...
+### Start Server ###
+
+To run the Application locally.
+
+At the root of the application run
+
+    $ rails s
